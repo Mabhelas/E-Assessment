@@ -1,0 +1,16 @@
+﻿@model Events_lab.Models.UpcomingPassedEventsViewModel
+@{
+    ViewBag.Title = "Edit Event";
+}
+
+@Html.Partial("_EventEditorForm")
+
+
+@section scripts {
+    @Scripts.Render("~/bundles/bootstrap-datetimepicker")
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+@section styles {
+    @Styles.Render("~/Content/bootstrap-datetimepicker")
+}
